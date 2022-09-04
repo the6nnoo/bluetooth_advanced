@@ -1,0 +1,29 @@
+package com.example.bluetooth_advanced.config;
+
+public class Messages {
+
+    /* ERRORS */
+    public static String PERMISSION_REQUIRED_LOCATION = "PERMISSION_REQUIRED_LOCATION";
+
+    /* SCAN HANDLER */
+    public static String SCANNING_STARTED = "SCANNING_STARTED";
+    public static String SCANNING_REQUIRES_BLUETOOTH_ON = "SCANNING_REQUIRES_BLUETOOTH_ON";
+    public static String SCANNING_FINISHED_WITH_NO_DEVICE = "SCANNING_FINISHED_WITH_NO_DEVICE";
+    public static String SCANNING_FINISHED_WITH_DEVICE_FOUND = "SCANNING_FINISHED_WITH_DEVICE_FOUND";
+
+    /* CONNECTION HANDLER */
+    public static String STATE_RECOGNIZING = "DEVICE_RECOGNIZING";
+    public static String STATE_CONNECTING = "DEVICE_CONNECTING";
+    public static String STATE_CONNECTED = "DEVICE_CONNECTED";
+    public static String STATE_DISCONNECTED = "DEVICE_DISCONNECTED";
+    public static String STATE_CONNECTING_FAILED = "DEVICE_CONNECTING_FAILED";
+
+    /* DATA HANDLER */
+    public static String DEVICE_GATT_INITIATED = "DEVICE_DATA_INITIATED";
+    public static String DEVICE_GATT_CONNECTING = "DEVICE_DATA_CONNECTING";
+    public static String DEVICE_GATT_CONNECTED = "DEVICE_DATA_CONNECTED";
+    public static String DEVICE_GATT_AVAILABLE = "DEVICE_DATA_AVAILABLE";
+    public static String DEVICE_GATT_DISCONNECTED = "DEVICE_DATA_DISCONNECTED";
+    //public static String DEVICE_DATA = "DEVICE_DATA";
+
+}

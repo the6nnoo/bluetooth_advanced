@@ -1,0 +1,44 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.example.bluetooth_advanced">
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+     <application>
+        <service
+            android:name="com.example.bluetooth_advanced.services.BluetoothLEService"
+            android:enabled="true"
+            android:exported="true"
+            android:foregroundServiceType="location"
+            android:stopWithTask="true"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" />
+
+         <receiver android:name="com.example.bluetooth_advanced.receivers.LoggerUpdateReceiver"
+             android:exported="true"
+             android:enabled="true">
+             <intent-filter android:priority="99999">
+                 <action android:name="com.example.andy.ACTION_LOGGER_DISCONNECTED"/>
+                 <action android:name="com.example.andy.ACTION_LOGGER_UPDATE"/>
+                 <action android:name="com.example.andy.ACTION_LOGGER_CONNECTED"/>
+             </intent-filter>
+         </receiver>
+    </application>
+
+
+
+</manifest>

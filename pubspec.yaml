@@ -1,7 +1,7 @@
 name: bluetooth_advanced
 description: Flutter plugin project to communicate with bluetooth device.
-version: 0.0.81
-homepage: https://github.com/JaveriaJR/bluetooth_advanced/tree/main/
+version: 0.0.82
+homepage: https://github.com/JaveriaJR/bluetooth_advanced/blob/main
 environment:
   sdk: ">=2.17.6 <3.0.0"
   flutter: ">=2.5.0"

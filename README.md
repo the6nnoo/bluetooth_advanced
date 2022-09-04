@@ -34,19 +34,20 @@ _bluetoothAdvanced.initBluetooth();
 ```
 
 ##### Step5: Scan Devices  
-returns a stream which you can continously listen to the following states:
-| STATE               |                  DESCRIPTION                     | DATA TYPE/FORMAT|  
-| :---                |                             :----            |            :----  |   
+######returns a stream which you can continously listen to the following states: 
+| STATE  | DESCRIPTION |  DATA TYPE/FORMAT |
+| ------------- | ------------- | ------------- |
 | SCANNING_STARTED    | Started Scanning a paired device |  String |
 | SCANNING_FINISHED_WITH_NO_DEVICE   | no device found |  String |
-| [device_address] , [device_name]   | return device address,name in comma seperated format  | String: "XX:XX:XX:XX:XX:XX,MyBluetoothDevice"
+| [device_address] , [device_name]   | return device address,name in comma seperated format  | String: "01:23:45:67:89:10,MyBluetoothDevice" |
+
 
 ```dart
 _bluetoothAdvanced.scanDevices();
 ```
 
 ##### Step6: Connect Device  
-returns a stream which you can continously listen to the following states:
+######returns a stream which you can continously listen to the following states:
 | STATE               |                  DESCRIPTION                     |  DATA TYPE / FORMAT |
 | :---                |                             :----               |   :---- |
 | DEVICE_RECOGNIZING  | Recognized the device with necessary information |  String |
@@ -60,7 +61,7 @@ _bluetoothAdvanced.connectDevice();
 ```
 
 ##### Step7: Listen to Data  
-returns a stream which you can continously listen to the following states:
+######returns a stream which you can continously listen to the following states:
 | STATE               |                  DESCRIPTION                     |  DATA TYPE / FORMAT |
 | :---                |                             :----               |   :---- |
 | DEVICE_DATA_INITIATED  | attempting data handshake with device |  String |
@@ -82,8 +83,8 @@ _bluetoothAdvanced.dispose();
 
 [Click here for more Example](https://pub.dev/packages/bluetooth_advanced/example)
 
-| ![Image](./example_app1.png)| ![Image](./example_app2.png)| ![Image](./example_app4.png)|  ![Image](./example_app3.png)
-| :---:     |       :----:          |   :----: |   :----:  |   
+| ![Image](./example_app1.png)| ![Image](./example_app2.png)| ![Image](./example_app4.png)|  ![Image](./example_app5.png) |  ![Image](./example_app6.png)
+| :---:     |       :----:          |   :----: |   :----:  |    :----:  |   
 
 
 Created by [Javeria Iffat](https://www.linkedin.com/in/javeria-iffat/)
